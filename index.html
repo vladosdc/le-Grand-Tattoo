@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/style.css">
+    <title>Le Grand Tatto</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="header">
+                <div class="header__table">
+                    <div class="header__table__logo">
+                        <a href="">
+                        <img src="img/logo.png" alt="Le Grand Tatto" class="logo__img">
+                        </a>
+                    </div>
+                    <div class="header__table__menu">
+                        <nav class="menu">
+                            <ul class="menu__list">
+                                <li class="menu__list__item-booking"><a href="index.html" class="item-booking">booking</a></li>
+                                <li class="menu__list__item-gallery"><a href="pages/gallery.html" class="item-gallery">gallery</a></li>
+                                <li class="menu__list__item-contact"><a href="pages/contact.html" class="item-contact">contact</a></li>
+                                <li><a href="https://www.instagram.com/le.grand.tattoo" target="_blank"><img src="img/instagram.png" alt="" class="instagram__img"></a></li>
+                            </ul>       
+                            
+                            
+                            <!-- burger menu -->
+
+
+
+                            <div class="hamburger-menu">
+                              <input id="menu__toggle" type="checkbox" />
+                              <label class="menu__btn" for="menu__toggle">
+                                <span></span>
+                              </label>
+                          
+                              <ul class="menu__box">
+                                <li><a class="menu__item" href="/index.html">booking</a></li>
+                                      <li><a class="menu__item" href="/pages/gallery.html">gallery</a></li>
+                                      <li><a class="menu__item" href="/pages/contact.html">contact</a></li>
+                                      <li><a href="https://www.instagram.com/le.grand.tattoo" target="_blank"><img src="/img/instagram.png" alt="" class="instagram__img"></a></li>
+
+                              </ul>
+                            </div>
+
+
+                </div>
+            </div>
+        </header>
+<!-- Booking Departament -->
+        <div class="booking__departament">
+            <div class="booking__departament__text">
+            <!-- <h1 class="booking__departament__title">le Grand Tattoo</h1> -->
+             <img src="img/Logotitle.png" alt="" class="booking__departament__imgTitle">
+            <p class="booking__depatament__text-item1">[thank you for looking]</p>
+            <p class="booking__depatament__text-item2">[please fill out to request a session]</p>
+        </div>
+        </div>
+
+            <form action="" class="form__orders">
+                <label>Name <span>(required)</span></label>
+                <div class="name-fields">
+                  <input type="text" placeholder="First Name" required id="firstName">
+                  <input type="text" placeholder="Last Name" required id="lastName">
+                </div>
+            
+                <label>Age <span>(required)</span></label>
+                <textarea placeholder="must be over 18" required id="age(req)"></textarea>
+            
+                <label>Email <span>(required)</span></label>
+                <input type="email" placeholder="Email" required id="email">
+            
+                <label>Phone <span>(required)</span></label>
+                <input type="tel" placeholder="Phone Number" required id="phone">
+
+                <label>Instagram <span>(username)</span></label>
+                <input type="instagram" placeholder="@username" required id="instagram">
+
+            
+                <label>What style are you interested in? <span>(required)</span></label>
+                <div class="radio-group">
+                  <label><input type="radio" name="style" required> skulls</label>
+                  <label><input type="radio" name="style"> patterns</label>
+                  <label><input type="radio" name="style"> exo-skeletal [bones]</label>
+                  <label><input type="radio" name="style"> xerox flash</label>
+                  <label><input type="radio" name="style"> sigilism</label>
+                  <label><input type="radio" name="style"> text</label>
+                  <label><input type="radio" name="style"> other</label>
+                </div>
+            
+                <label>Size <span>(required)</span></label>
+                <select required>
+                  <option value="">Select an option</option>
+                  <option>Small</option>
+                  <option>Medium</option>
+                  <option>Large</option>
+                </select>
+            
+                <label>When are you available? <span>(required)</span></label>
+                <div class="radio-group">
+                  <label><input type="radio" name="availability" required> monday</label>
+                  <label><input type="radio" name="availability"> tuesday</label>
+                  <label><input type="radio" name="availability"> wednesday</label>
+                  <label><input type="radio" name="availability"> thursday</label>
+                <label><input type="radio" name="availability"> friday</label>
+                <label><input type="radio" name="availability"> saturday</label>
+                </div>
+
+
+                <label>Are you traveling? <span>(required)</span></label>
+                <p class="subtext">If yes, where from and how long are you in Berlin?</p>
+                <input type="text" required>
+            
+                <label>Message <span>(required)</span></label>
+                <p class="subtext">
+                  please include as much detail as possible. such as... where on your body you want the tattoo, is this a cover up, a blast over, filler, do you want color, a word, a specific design, abstract, figurative, etc.
+                </p>
+                <textarea required></textarea>
+                <div class="btnblock">
+                <button type="submit">Send</button>
+            </div>
+                
+              </form>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/order.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</body>
+</html>
