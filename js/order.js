@@ -23,7 +23,12 @@ document.querySelector(".form__orders").addEventListener("submit", function (e) 
 
   // Отправляем данные на сервер
   axios
-    .post("http://localhost:5500/send-message", data) // Отправляем на локальный сервер
+
+
+  //for server not lokal
+   .post("https://your-project.up.railway.app/send-message", data) // Отправляем на сервер Railway
+
+  //  .post("http://localhost:5500/send-message", data) // Отправляем на локальный сервер
     .then((res) => {
     })
     .catch((err) => {
